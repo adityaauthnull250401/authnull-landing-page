@@ -1,0 +1,247 @@
+---
+layout: default
+title: "Home"
+---
+
+<div class="text-center">
+  <!-- Example: a small "release" banner with fade -->
+  <a
+    href="/"
+    class="inline-block translate-y-[-1rem] animate-fade-in opacity-0 [--animation-duration:0.8s] text-sm mb-2 bg-transparent-white px-3 py-1 rounded-full border border-transparent-gray"
+  >
+    Latest Release – Built for scale →
+  </a>
+
+  <!-- Title -->
+  <h1
+    class="text-gradient my-6 text-6xl md:text-8xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]"
+  >
+    Authnull is the better way <br class="hidden md:block" />
+    to secure resources.
+  </h1>
+
+  <!-- Subtitle -->
+  <p
+    class="mb-12 text-lg md:text-xl text-primary-text translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]"
+  >
+    Meet the new standard for Zero-trust security.
+    <br class="hidden md:block" />
+    Resource Management, Proxy Databases, and Conditional Access.
+  </p>
+
+  <!-- Buttons -->
+  <div
+    class="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms] flex justify-center gap-4"
+  >
+    <!-- Secondary button with faint gradient or glass style -->
+    <a
+      href="/"
+      class="inline-flex items-center rounded-full border border-transparent-gray bg-white/10 px-5 py-2 text-sm font-medium text-black hover:bg-white/20 transition-colors"
+    >
+      Learn More
+    </a>
+
+    <!-- Primary gradient button -->
+    <a
+      href="/"
+      class="inline-flex items-center rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-2 text-sm font-medium text-white hover:shadow-lg transition-shadow"
+    >
+      Get Started
+      <!-- Could add a chevron icon → or <ChevronIcon/> -->
+    </a>
+  </div>
+</div>
+<div class="mt-24 [perspective:1800px]">
+  <div
+    width="100"
+    class="relative rounded-lg border border-transparent-white bg-white bg-opacity-[0.02] bg-hero-gradient before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-hero-glow before:opacity-0 before:[filter:blur(120px)] [transform:rotateX(25deg)] /* Start tilted */"
+    id="heroImageContainer"
+  >
+    <!-- Once in view, we add .animate-image-rotate and .before:animate-image-glow 
+            either with JS or conditionally in code.  -->
+
+    <!-- The random lines container absolutely covering the box -->
+    <div class="absolute top-0 left-0 z-20 h-full w-full" id="heroRandomLines"></div>
+
+    <!-- Sketch lines SVG -->
+    <svg
+      class="absolute inset-0 w-full h-full fill-none stroke-gray-700 /* or any darker color that stands out */ stroke-[1.5] /* ~1.5px line width in Tailwind */ opacity-70 /* ~70% visibility, use any value you like */"
+      viewBox="0 0 1499 778"
+    >
+      <path d="M1500 72L220 72" />
+      <path d="M1500 128L220 128" />
+      <path d="M1500 189L220 189" />
+      <path d="M220 777L220 1" />
+      <path d="M538 777L538 128" />
+    </svg>
+
+    <!-- Actual hero image (fades in after ~680ms) -->
+    <img
+      id="heroImage"
+      class="relative z-10 opacity-0 transition-opacity duration-700 w-[70%] max-w-[70%] mx-auto rounded-2xl"
+      src="/assets/images/hero.webp"
+      alt="Hero image"
+    />
+  </div>
+</div>
+<!-- Our Customers Section -->
+<section class="mt-24 py-20 bg-gradient-to-b from-[#13141b] to-[#181a23] text-center">
+  <div class="mx-auto max-w-[80rem] px-6">
+    <!-- Section heading -->
+    <h2 class="mb-4 text-5xl font-bold text-white">Our Customers</h2>
+    <p class="mb-12 text-gray-400 text-lg">
+      We’re proud to partner with forward-thinking companies across all industries.
+    </p>
+
+    <!-- Logo row -->
+    <div class="flex flex-wrap items-center justify-center gap-10">
+      <!-- Each logo is grayscale by default, color on hover -->
+      <img
+        src="/assets/images/broadcom.png"
+        alt="Broadcom"
+        class="h-12 filter grayscale hover:grayscale-0 transition-all duration-300"
+      />
+      <img
+        src="/assets/images/emapta.png"
+        alt="Emapta"
+        class="h-12 filter grayscale hover:grayscale-0 transition-all duration-300"
+      />
+      <img
+        src="/assets/images/google-cloud.png"
+        alt="Google Cloud"
+        class="h-12 filter grayscale hover:grayscale-0 transition-all duration-300"
+      />
+      <img
+        src="/assets/images/nvidea.jpg"
+        alt="NVIDIA"
+        class="h-12 filter grayscale hover:grayscale-0 transition-all duration-300"
+      />
+    </div>
+  </div>
+</section>
+<!-- TESTIMONIALS SECTION -->
+<section class="py-16 bg-[#FAFBFF]">
+  <div class="max-w-[80rem] mx-auto px-6 text-center">
+    <!-- Top "Testimonial" pill -->
+    <div class="inline-block px-3 py-1 mb-5 bg-white rounded-full border border-gray-200">
+      <span class="text-sm uppercase tracking-wide text-gray-600">
+        Testimonial
+      </span>
+    </div>
+
+    <!-- Heading -->
+    <h2 class="mb-3 text-4xl font-bold text-gray-800">
+      Hear What Our Users Are Saying
+    </h2>
+
+    <!-- Subheading -->
+    <p class="mb-10 text-gray-500 max-w-[45rem] mx-auto">
+      Discover the varied perspectives and experiences as users share their stories,
+      highlighting the versatility of our app.
+    </p>
+  </div>
+
+  <!-- Cards row (6 across at desktop, wrap on smaller) -->
+  <div class="max-w-[90rem] mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-sm p-5 text-left">
+        <div class="flex items-center mb-3">
+          <!-- Placeholder circle or real img -->
+          <div class="w-12 h-12 rounded-full bg-blue-300 mr-3"></div>
+          <div>
+            <h4 class="text-base font-semibold text-gray-800">Guy Hawkins</h4>
+            <span class="text-sm text-gray-500">Creative Director at Amazon</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+          "As a busy professional, this to-do app is a lifesaver. 
+          It effortlessly syncs across all my devices, keeping me on top of tasks 
+          no matter where I am."
+        </p>
+        <!-- Star rating -->
+        <div class="text-yellow-400 text-sm">★★★★☆</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-sm p-5 text-left">
+        <div class="flex items-center mb-3">
+          <div class="w-12 h-12 rounded-full bg-blue-300 mr-3"></div>
+          <div>
+            <h4 class="text-base font-semibold text-gray-800">Ronald Richards</h4>
+            <span class="text-sm text-gray-500">Product Designer at Stock</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+          "This to-do app is a true game-changer! Effortless, sleek, and easy 
+          to use—never miss a deadline again."
+        </p>
+        <div class="text-yellow-400 text-sm">★★★★★</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-sm p-5 text-left">
+        <div class="flex items-center mb-3">
+          <div class="w-12 h-12 rounded-full bg-blue-300 mr-3"></div>
+          <div>
+            <h4 class="text-base font-semibold text-gray-800">Bessie Cooper</h4>
+            <span class="text-sm text-gray-500">UX Designer at Tokopedia</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+          "Effortlessly syncing across devices, I can manage tasks on the fly. 
+          It’s both functional and beautifully designed."
+        </p>
+        <div class="text-yellow-400 text-sm">★★★★☆</div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-xl shadow-sm p-5 text-left">
+        <div class="flex items-center mb-3">
+          <div class="w-12 h-12 rounded-full bg-blue-300 mr-3"></div>
+          <div>
+            <h4 class="text-base font-semibold text-gray-800">Darrell Steward</h4>
+            <span class="text-sm text-gray-500">Senior Manager at Google</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+          "This app ensures I stay productive no matter where I am. 
+          The straightforward UI is a huge plus."
+        </p>
+        <div class="text-yellow-400 text-sm">★★★★★</div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded-xl shadow-sm p-5 text-left">
+        <div class="flex items-center mb-3">
+          <div class="w-12 h-12 rounded-full bg-blue-300 mr-3"></div>
+          <div>
+            <h4 class="text-base font-semibold text-gray-800">Desiree Cooper</h4>
+            <span class="text-sm text-gray-500">Product Designer at Slack</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+          "I love how quickly I can organize tasks and check them off. 
+          It’s boosted my productivity in ways I never imagined."
+        </p>
+        <div class="text-yellow-400 text-sm">★★★★☆</div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white rounded-xl shadow-sm p-5 text-left">
+        <div class="flex items-center mb-3">
+          <div class="w-12 h-12 rounded-full bg-blue-300 mr-3"></div>
+          <div>
+            <h4 class="text-base font-semibold text-gray-800">Darlene Robertson</h4>
+            <span class="text-sm text-gray-500">Product Designer at Stock</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+          "Customizable views and efficient prioritization keep me on top of my goals. 
+          It's a must-have in my daily workflow."
+        </p>
+        <div class="text-yellow-400 text-sm">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
